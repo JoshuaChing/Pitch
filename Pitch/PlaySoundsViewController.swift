@@ -28,5 +28,13 @@ class PlaySoundsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func playSoundForButton(sender: UIButton) {
+        print("play")
+    }
+    
+    @IBAction func stopButtonPressed(sender: AnyObject) {
+        print("stop")
+    }
 
 }

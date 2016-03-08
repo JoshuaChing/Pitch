@@ -82,10 +82,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yg8-u5-GxW" userLabel="SnailButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="snail"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="KsP-K2-npd" eventType="touchUpInside" id="AH2-r8-iCU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgw-IA-KQO" userLabel="RabbitButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="rabbit"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="KsP-K2-npd" eventType="touchUpInside" id="SgX-Ci-MTb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -95,10 +101,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRD-47-4go" userLabel="ChipmunkButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="chipmunk"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="KsP-K2-npd" eventType="touchUpInside" id="3la-6l-KkW"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99u-3c-ZCZ" userLabel="VaderButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="vader"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="KsP-K2-npd" eventType="touchUpInside" id="Nbe-2w-cc6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -108,10 +120,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbV-l3-NH9" userLabel="ParrotButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="parrot"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="KsP-K2-npd" eventType="touchUpInside" id="XdA-Vn-khe"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kig-8c-igb" userLabel="ReverbButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="reverb"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="KsP-K2-npd" eventType="touchUpInside" id="u0J-Tq-Sx9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -121,6 +139,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh4-Hn-EG1" userLabel="StopButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="134"/>
                                                 <state key="normal" image="stop"/>
+                                                <connections>
+                                                    <action selector="stopButtonPressed:" destination="KsP-K2-npd" eventType="touchUpInside" id="gvv-Sl-miF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
