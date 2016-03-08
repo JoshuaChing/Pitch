@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVAudioRecorderDelegate {
+class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
     @IBOutlet weak var recordingLabel: UILabel!
     @IBOutlet weak var recordButton: UIButton!
@@ -33,6 +33,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
         recordButton.enabled = false
         stopRecordButton.enabled = true
 
+        // code provided by udacity course
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
 
         let recordingName = "pitchRecording.wav"
@@ -55,6 +56,11 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
         recordingLabel.text = "Tap to Record"
         recordButton.enabled = true
         stopRecordButton.enabled = false
+
+        // code provided by udacity course
+        audioRecorder.stop()
+        let audioSession = AVAudioSession.sharedInstance()
+        try! audioSession.setActive(false)
     }
 
 }
