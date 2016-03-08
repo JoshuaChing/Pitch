@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioRecorderDelegate {
 
     @IBOutlet weak var recordingLabel: UILabel!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopRecordButton: UIButton!
     
+    var audioRecorder:AVAudioRecorder!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,6 +32,23 @@ class ViewController: UIViewController {
         recordingLabel.text = "Recording in Progress"
         recordButton.enabled = false
         stopRecordButton.enabled = true
+
+        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+
+        let recordingName = "pitchRecording.wav"
+        let filePath = NSURL.fileURLWithPathComponents([dirPath, recordingName])
+
+        print(filePath)
+
+        let session = AVAudioSession.sharedInstance()
+        try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
+
+        try! audioRecorder = AVAudioRecorder(URL: filePath!, settings: [:])
+        audioRecorder.delegate = self
+        audioRecorder.meteringEnabled = true
+        audioRecorder.prepareToRecord()
+        audioRecorder.record()
+
     }
 
     @IBAction func stopRecording(sender: AnyObject) {
