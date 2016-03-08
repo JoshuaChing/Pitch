@@ -20,6 +20,12 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var stopButton: UIButton!
     
     var recordedAudio: NSURL!
+    var audioFile: AVAudioFile!
+    var audioEngine: AVAudioEngine!
+    var audioPlayerNode: AVAudioPlayerNode!
+    var stopTimer: NSTimer!
+    
+    enum ButtonType: Int {case Slow = 0, Fast, Chipmunk, Vader, Echo, Reverb}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +36,11 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playSoundForButton(sender: UIButton) {
-        print("play")
+        
     }
     
     @IBAction func stopButtonPressed(sender: AnyObject) {
-        print("stop")
+        
     }
 
 }
