@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="1056" y="409"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="2w3-a0-btU">
             <objects>
-                <viewController id="KsP-K2-npd" sceneMemberID="viewController">
+                <viewController id="KsP-K2-npd" customClass="PlaySoundsViewController" customModule="Pitch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2SU-YX-Ajl"/>
                         <viewControllerLayoutGuide type="bottom" id="b8N-gF-GGm"/>
@@ -105,11 +105,11 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hqc-8L-XwV">
                                         <rect key="frame" x="0.0" y="358" width="560" height="179"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbV-l3-NH9" userLabel="ParrotButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbV-l3-NH9" userLabel="ParrotButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="179"/>
                                                 <state key="normal" image="parrot"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kig-8c-igb" userLabel="ReverbButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kig-8c-igb" userLabel="ReverbButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="179"/>
                                                 <state key="normal" image="reverb"/>
                                             </button>
