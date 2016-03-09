@@ -36,6 +36,26 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playSoundForButton(sender: UIButton) {
+        switch(ButtonType(rawValue: sender.tag)!) {
+        case .Slow:
+            print("slow")
+            break
+        case .Fast:
+            print("fast")
+            break
+        case .Chipmunk:
+            print("chipmunk")
+            break
+        case .Vader:
+            print("vader")
+            break
+        case .Echo:
+            print("echo")
+            break
+        case .Reverb:
+            print ("reverb")
+            break
+        }
         
     }
     
