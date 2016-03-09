@@ -31,6 +31,8 @@ class PlaySoundsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Sound Effects"
+        
         let filePath = NSURL.fileURLWithPathComponents([dirPath, recordingName])
         try! audioFile = AVAudioFile(forReading: filePath!)
         try! audioPlayer = AVAudioPlayer(contentsOfURL: filePath!, fileTypeHint:nil)
