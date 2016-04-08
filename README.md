@@ -1,7 +1,9 @@
 Pitch
 ==================
 
-iOS practice by following this online course:
+This app records audio and plays it back with sound effects.
+
+This app was made to practice iOS by following this online course:
 
 https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585
 
